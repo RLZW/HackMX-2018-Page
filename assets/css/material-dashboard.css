@@ -13112,6 +13112,10 @@ h2.title {
 .off-canvas-sidebar .navbar-collapse .nav > li > a:hover {
   background: rgba(200, 200, 200, 0.2); }
 
+
+#mainpan {
+  float: center;
+}
 .main-panel {
   position: relative;
   float: right;
@@ -13494,6 +13498,10 @@ h2.title {
 .table > tfoot > tr > td {
   padding: 12px 8px;
   vertical-align: middle; }
+
+#Titulo {
+  font-size: 30px;
+}
 
 .table .th-description {
   max-width: 150px; }

@@ -20,109 +20,188 @@
     <link href="../assets/assets-for-demo/demo.css" rel="stylesheet" />
     <!-- iframe removal -->
 </head>
-
-<body class="">
-    <div class="wrapper">
-        <div class="main-panel">
-            <!-- End Navbar -->
-            <div class="content">
+<div class="">
+        <div class="wrapper">
+                <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+                    <!--
+                Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+        
+                Tip 2: you can also add an image using data-image tag
+            -->
+                    <div class="logo">
+                        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                            Creative Tim
+                        </a>
+                    </div>
+                    <!-- Barra Lateral -->
+                    <div class="sidebar-wrapper">
+                        <ul class="nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../examples/dashboard.html">
+                                    <i class="material-icons">dashboard</i>
+                                    <p>Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../examples/user.html">
+                                    <i class="material-icons">person</i>
+                                    <p>Login</p>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                    <a class="nav-link" href="../examples/user.html">
+                                        <i class="material-icons">person</i>
+                                        <p>User Profile</p>
+                                    </a>
+                                </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../examples/table.html">
+                                    <i class="material-icons">content_paste</i>
+                                    <p>Table List</p>
+                                </a>
+                            </li>
+                           
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../examples/notifications.html">
+                                    <i class="material-icons">notifications</i>
+                                    <p>Notifications</p>
+                                </a>
+                            </li>
+                            <li class="nav-item active-pro active">
+                                <a class="nav-link" href="../examples/upgrade.html">
+                                    <i class="material-icons">person</i>
+                                    <p>Registrate</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        </div>
+    <div class="main-panel" >
+         <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
                 <div class="container-fluid">
-                    <div class="col">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header card-header-primary">
-                                    <h4 class="card-title">Crear Cuenta</h4>
-                                    <p class="card-category"></p>
-                                </div>
-                                <div class="card-body">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Nombre de Usuario</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Correo Electrónico</label>
-                                                    <input type="email" class="form-control">
-                                                </div>
+                    <div class="navbar-wrapper">
+                        <a class="navbar-brand">Material Dashboard</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                        <span class="navbar-toggler-icon icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        
+                            <li class="nav-item pull right">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="material-icons">person</i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Account</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <!-- End Navbar -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="col">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header card-header-primary">
+                                <h4 class="card-title"><strong>Registro</strong></h4>
+                                <p class="card-category"></p>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Nombre de Usuario</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Nombre(s)</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Apellido Paterno</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Correo Electrónico</label>
+                                                <input type="email" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                                <div class="col-md-5">
-                                                        <div class="form-group">
-                                                            <label class="bmd-label-floating">Apellido Materno</label>
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                </div>
-                                                <div class="col-md-5">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Nombre(s)</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Apellido Paterno</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-md-5">
                                                     <div class="form-group">
-                                                        <label class="bmd-label-floating">Dirección</label>
+                                                        <label class="bmd-label-floating">Apellido Materno</label>
                                                         <input type="text" class="form-control">
                                                     </div>
-                                                </div>
                                             </div>
-                                        <div class="row">
-                                            
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-md-5">
                                                 <div class="form-group">
-                                                    <label class="bmd-label-floating">Ciudad</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                           
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Código Postal</label>
+                                                    <label class="bmd-label-floating">Dirección</label>
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
-                                       
-                                        <button type="submit" class="btn btn-primary pull-right">Crear Cuenta</button>
-                                        <div class="clearfix"></div>
-                                    </form>
-                                </div>
+                                    <div class="row">
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Ciudad</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="bmd-label-floating">Código Postal</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <button type="submit" class="btn btn-primary pull-right">Crear Cuenta</button>
+                                    <div class="clearfix"></div>
+                                </form>
                             </div>
                         </div>
-                        
-                        
                     </div>
+                    
+                    
                 </div>
             </div>
-            <footer class="footer ">
-                <div class="container-fluid">
-                   
-                    <div class="copyright pull-right">
-                        &copy;
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script>
-                        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-                    </div>
-                </div>
-            </footer>
         </div>
+        <footer class="footer ">
+            <div class="container-fluid">
+            
+                <div class="copyright pull-right">
+                    &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                    <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+                </div>
+            </div>
+        </footer>
     </div>
-</body>
+</div>
+
 <!--   Core JS Files   -->
 <script src="../assets/js/core/jquery.min.js"></script>
 <script src="../assets/js/core/popper.min.js"></script>
