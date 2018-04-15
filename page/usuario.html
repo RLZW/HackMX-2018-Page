@@ -90,24 +90,25 @@
                                     
                                 </div>
                                 <div class="card-body">
+                                   
                                     <form>
                                         <div class="row">
                                             <div class="col-md-5">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Nombre de usuario</label>
-                                                    <input type="text" class="form-control" disabled>
+                                                    <input type="text" id="nombreusuario"class="form-control" disabled>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Correo electronico</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id="correo" class="form-control" disabled>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Nombre(s)</label>
-                                                    <input type="email" class="form-control">
+                                                    <input type="email" id="nombres" class="form-control" disabled>
                                                 </div>
                                             </div>
                                         </div>
@@ -115,13 +116,13 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Apellido Paterno</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id="apellidop" class="form-control" disabled>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Apellido Materno</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id="apellidom" class="form-control" disabled>
                                                 </div>
                                             </div>
                                         </div>
@@ -129,7 +130,7 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Dirección</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id="direccion" class="form-control" disabled>
                                                 </div>
                                             </div>
                                         </div>
@@ -137,19 +138,34 @@
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Ciudad</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id="ciudad" class="form-control" disabled>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="bmd-label-floating">Código Postal</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" id ="codigo"class="form-control" disabled>
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
+                                        <button type="submit" class="btn btn-primary pull-right">ACTIVAR</button>
                                         <div class="clearfix"></div>
                                     </form>
+
+                                    <script>
+                                            document.getElementById('nombreusuario').value="chiquetere";
+                                            document.getElementById('correo').value='new value';
+                                            document.getElementById('nombres').value='new value';
+                                            document.getElementById('apellidop').value='new value';
+                                            document.getElementById('apellidom').value='new value';
+                                            document.getElementById('direccion').value='new value';
+                                            document.getElementById('ciudad').value='new value';
+                                            document.getElementById('codigo').value='new value';
+        
+        
+                                            
+                                            
+                                    </script>
                                 </div>
                             </div>
                         </div>
