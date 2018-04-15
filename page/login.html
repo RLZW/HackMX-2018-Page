@@ -8,8 +8,9 @@
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="../assets/img/apple-icon.png">
     <link rel="icon" href="../assets/img/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>
-        Material Dashboard by Creative Tim
+        Login
     </title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -25,15 +26,32 @@
                 <img class="card-img-top" src="../images/chiquetere.jpg" alt="Logito SafeChain">
                 <div class="card-body">
                   <h5 class="card-title-center" id="Titulo"><center><b>SafeChain</b></center></h5>
-                  <p class="card-text"><center>SafeChain es una plataforma descentralizada en la cual puedes checar tus retiros, pagos, cobros y saldos de todos los bancos.</center></p>
                   <div class="">
-                      <center>
-                        <a href="login.html" class="btn btn-primary">Iniciar Sesión</a>
-                        <a href="nueva_cuenta.html" class="btn btn-primary">Registro</a>
-                    </center>
-                  </div>
+                  
+                  <form action="" method="POST">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group pull-right">
+                                    <label class="bmd-label-floating">Nombre de Usuario</label>
+                                    <input type="text" name="Username" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">Correo Electrónico</label>
+                                    <input type="email" name="password" class="form-control">
+                                </div>
+                            </div>
+                       
                     
+                        <p><input type="submit" /></p>
+                        <div class="clearfix"></div>
+                    </form>
                 </div>
+                    <h2>JSON</h2>
+                <pre id="result">
+                </div>
+                
         </div>
         
        
@@ -53,6 +71,32 @@
         </footer>
     
 </div>
+
+<script type="text/javascript">
+    $.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+
+$(function() {
+    $('form').submit(function() {
+        $('#result').text(JSON.stringify($('form').serializeObject()));
+        return false;
+    });
+});
+</script>
 
 <!--   Core JS Files   -->
 <script src="../assets/js/core/jquery.min.js"></script>
