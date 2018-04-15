@@ -90,10 +90,10 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table">
+                                        <table class="table" id="tabla">
                                             <thead class=" text-primary">
                                                 <th>
-                                                    Fecha
+                                                    Orden
                                                 </th>
                                                 <th>
                                                     Concepto
@@ -109,176 +109,29 @@
                                                 </th>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>
-                                                        1
-                                                    </td>
-                                                    <td>
-                                                        Dakota Rice
-                                                    </td>
-                                                    <td>
-                                                        Niger
-                                                    </td>
-                                                    <td>
-                                                        Oud-Turnhout
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $36,738
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>
-                                                        Minerva Hooper
-                                                    </td>
-                                                    <td>
-                                                        Curaçao
-                                                    </td>
-                                                    <td>
-                                                        Sinaai-Waas
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $23,789
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        3
-                                                    </td>
-                                                    <td>
-                                                        Sage Rodriguez
-                                                    </td>
-                                                    <td>
-                                                        Netherlands
-                                                    </td>
-                                                    <td>
-                                                        Baileux
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $56,142
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        4
-                                                    </td>
-                                                    <td>
-                                                        Philip Chaney
-                                                    </td>
-                                                    <td>
-                                                        Korea, South
-                                                    </td>
-                                                    <td>
-                                                        Overland Park
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $38,735
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        5
-                                                    </td>
-                                                    <td>
-                                                        Doris Greene
-                                                    </td>
-                                                    <td>
-                                                        Malawi
-                                                    </td>
-                                                    <td>
-                                                        Feldkirchen in Kärnten
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $63,542
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        6
-                                                    </td>
-                                                    <td>
-                                                        Mason Porter
-                                                    </td>
-                                                    <td>
-                                                        Chile
-                                                    </td>
-                                                    <td>
-                                                        Gloucester
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $78,615
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        7
-                                                    </td>
-                                                    <td>
-                                                        Mason Porter
-                                                    </td>
-                                                    <td>
-                                                        Chile
-                                                    </td>
-                                                    <td>
-                                                        Gloucester
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $78,615
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        8
-                                                    </td>
-                                                    <td>
-                                                        Mason Porter
-                                                    </td>
-                                                    <td>
-                                                        Chile
-                                                    </td>
-                                                    <td>
-                                                        Gloucester
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $78,615
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        9
-                                                    </td>
-                                                    <td>
-                                                        Mason Porter
-                                                    </td>
-                                                    <td>
-                                                        Chile
-                                                    </td>
-                                                    <td>
-                                                        Gloucester
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $78,615
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        10
-                                                    </td>
-                                                    <td>
-                                                        Mason Porter
-                                                    </td>
-                                                    <td>
-                                                        Chile
-                                                    </td>
-                                                    <td>
-                                                        Gloucester
-                                                    </td>
-                                                    <td class="text-primary">
-                                                        $78,615
-                                                    </td>
-                                                </tr>
+                                                    
+                                                <script>
+                                                    
+                                                    for(var i = 25; i >= 1; i--){
+                                                        var table = document.getElementById("tabla");
+                                                        var row = table.insertRow(1);
+                                                        var orden = row.insertCell(0);
+                                                        var concepto = row.insertCell(1);
+                                                        var estado = row.insertCell(2);
+                                                        var cuenta = row.insertCell(3);
+                                                        var monto = row.insertCell(4);
+                                                            
+                                                        orden.innerHTML = i;
+                                                        concepto.innerHTML = "PAGO HOTELAZO";
+                                                        estado.innerHTML = "ACEPTADO";
+                                                        cuenta.innerHTML = "BANAMEX";
+                                                        monto.innerHTML = "UnChingo";
+                                                       
+                                                        
+
+                                                    }
+                                                </script>
+                                                
                                             </tbody>
                                         </table>
                                     </div>
